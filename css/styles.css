@@ -36,6 +36,9 @@ body {
     width: 70%;
     margin: auto;
 }
+#content h3 {
+    letter-spacing: 2px;
+}
 img {
     float: right;
     width: 30%;
