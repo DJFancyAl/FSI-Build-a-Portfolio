@@ -1,0 +1,99 @@
+body {
+    background-color: #8ba8af;
+    color: #1e464f;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #2c4e56;
+    padding-top:30px;
+    color: #fff;
+}
+
+#header h1 {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display:inline-block;
+    transform:rotate(-5deg);
+    -webkit-animation:spin 0.2s linear infinite;
+    -moz-animation:spin 0.2s linear infinite;
+    animation:spin 0.2s linear infinite;
+    animation-direction: alternate;
+}
+
+#header h2 {
+    padding-left: 30px;
+    -webkit-animation:move 4s linear infinite;
+    -moz-animation:move 4s linear infinite;
+    animation:move 4s linear infinite;
+    animation-direction: alternate;
+}
+
+#content {
+    width: 70%;
+    margin: auto;
+}
+img {
+    float: right;
+    width: 30%;
+    margin: 20px;
+    border: 3px solid #2c4e56;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+img:hover {
+    box-shadow: 0px 0px 10px #2c4e56;
+}
+
+.highlight {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #2c4e56;
+    color: #fff;
+    padding: 20px;
+    margin: 30px 50px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    box-shadow: 4px 4px 10px #2c4e56;
+}
+.highlight:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(7, 10, 99);
+}
+a:hover {
+    color: #1e464f;
+    text-decoration:overline;
+}
+
+@-moz-keyframes move { 
+    100% { -moz-transform: translate(20%, 0px); } 
+}
+@-webkit-keyframes move { 
+    100% { -webkit-transform: translate(20%, 0px); } 
+}
+@keyframes move { 
+    100% { 
+        -webkit-transform: translate(20%, 0px);
+        transform: translate(20%, 0px);
+    } 
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(10deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(10deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(10deg); 
+        transform:rotate(10deg); 
+    } 
+}
